@@ -7,18 +7,21 @@ import { Context } from './Context';
 
 const Batchsearch = () => {
 
+  let {input} = useContext(Context);
+  let {setInput} = useContext(Context);
   const searchval = useContext(Context);
   // console.log(searchval);
   
-  let [value, setValue] = useState(searchval.OBJ);
+  // let [value, setValue] = useState(searchval.OBJ);
 
+  
 
   const inputValue = useRef(); 
   const getValue = () => {
-    value = inputValue.current.value.toLowerCase();
+    let value = inputValue.current.value.toLowerCase();
     // console.log(value)
 
-    let item = searchval.OBJ.filter((elem) => {
+    let item = input.filter((elem) => {
       let keys = Object.keys(elem);
       // console.log(keys);
 
@@ -32,7 +35,7 @@ const Batchsearch = () => {
       }
     });
 
-    setValue(item);
+    setInput(item);
   };
 
   return (

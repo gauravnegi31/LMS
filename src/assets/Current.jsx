@@ -1,11 +1,18 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { Context } from './Context';
 
-const Current = ({newobj}) => {
+
+
+
+const Current = () => {
+
+  let {input} = useContext(Context);
+
 
   return (
     <>
      <div className='flex gap-6 flex-wrap mt-4'>
-     {newobj.map((val) => {
+     {input.map((val) => {
           return (
             <>
             <div className='flex gap-6 flex-wrap mt-9'>
