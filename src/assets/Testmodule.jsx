@@ -19,8 +19,8 @@ const Testmodule = () => {
 <div className="px-4 py-2 text-center">
  <h1 className="text-gray-500 font-bold text-xl ">Frontend Development</h1>
 </div>
-<div onClick={() =>setaccordianOpen(!accordianOpen)} className='mt-2 cursor-pointer'>
-  <div  className='flex justify-between px-3 '>
+<div className='mt-2 cursor-pointer'>
+  <div onClick={() =>setaccordianOpen(!accordianOpen)}  className='flex justify-between px-3 '>
   <h5 className='text-blue-900 font-bold text-sm'>HTML , CSS</h5>
   {accordianOpen ?  <i class="fa-solid fa-angle-up"></i> : <i className="fa-solid fa-angle-down"></i>}
   
@@ -44,8 +44,8 @@ const Testmodule = () => {
   <p className='border mt-4'></p>
   </div>
 
-  <div onClick={() =>setaccordianOpen1(!accordianOpen1)} className='mt-2 cursor-pointer'>
-  <div  className='flex justify-between px-3 '>
+  <div className='mt-2 cursor-pointer'>
+  <div onClick={() =>setaccordianOpen1(!accordianOpen1)} className='flex justify-between px-3 '>
   <h5 className='text-blue-900 font-bold'>Javascript , React.Js</h5>
   {accordianOpen1 ?  <i class="fa-solid fa-angle-up"></i> : <i className="fa-solid fa-angle-down"></i>}
   
@@ -75,8 +75,8 @@ const Testmodule = () => {
 <div className="px-4 py-2 text-center">
  <h1 className="text-gray-500 font-bold text-xl ">MERN STACK </h1>
 </div>
-<div onClick={() =>setaccordianOpen2(!accordianOpen2)} className='mt-2 cursor-pointer'>
-  <div  className='flex justify-between px-3 '>
+<div  className='mt-2 cursor-pointer'>
+  <div onClick={() =>setaccordianOpen2(!accordianOpen2)}  className='flex justify-between px-3 '>
   <h5 className='text-blue-900 font-bold'>Javascript</h5>
   {accordianOpen2 ?  <i class="fa-solid fa-angle-up"></i> : <i className="fa-solid fa-angle-down"></i>}
   
